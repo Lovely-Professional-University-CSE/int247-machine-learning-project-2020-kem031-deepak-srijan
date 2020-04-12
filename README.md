@@ -1,16 +1,34 @@
+Project By->
+
+
+Name:             Deepak Yadav                Srijan Singh
+
+Roll No:          A33                         B63
+
+Registration No:  11716024                    11709122
+
+
+
 Human Activity Detection for Surveillance Video Compression
 
+
 Abstract
+
 This is an implementation of the paper from the paper: https://www.leadingindia.ai/downloads/projects/VP/vp_8.pdf
 With the increase in the number of anti-social activities that have been taking place, security has been given utmost importance lately. Many organizations have installed CCTVs for constant monitoring of people and their interactions. For a developed country with a population of 64 million, every person is captured by a camera ~ 30 times a day. A lot of video is generated and stored for certain time duration (India: 30 days). A 704x576 resolution image recorded at 25fps will generate roughly 20GB per day. Since constant monitoring of data by humans to judge if the events are abnormal is a near impossible task as it requires a workforce and their constant attention. This creates a need to automate the same. Also, there is a need to show in which frame and which parts of it contain the unusual activity which aid the faster judgment of that unusual activity being abnormal. The method involves generating motion influence map for frames to represent the interactions that are captured in a frame. The main characteristic feature of the proposed motion influence map is that it effectively depicts the motion characteristics of the movement speed, movement direction, and size of the objects and their interactions within a frame sequence. It further extracts frames of high motion influence values and compares with the testing frames to automatically detect global and local unusual activities.
 Dataset:	http://www.svcl.ucsd.edu/projects/anomaly/
 To detect the abnormal/unusual human activities in a video
 
+
+
 Requirements
+
 Python openCV 3 for python numpy 1.7 FFmpeg
 
 
+
 Implementation
+
 The code is divided into 5 modules, optflowofblocks, motioninfluencegenerator, createmegablocks, training and testing. In this section, a method for representing motion characteristics is described for the detection and localization of unusual activities within a crowded scene. Here, we should note that we considered two types of unusual activities:
 Local and Global. Local unusual activities occur within a relatively small area. Different motion patterns may appear in a portion of the frame, such as the unique appearance of nonhuman objects or the fast movement of a person when most of the other pedestrians are walking slowly. Global unusual activities occur across the frame, for example, when every pedestrian within a scene starts to run suddenly to escape from the scene.
 1) Data Input and Pre-Processing The video file is given as an input to the system, which is subjected to pre processing. A video is treated as sequence of images called frames and these frames are processed sequentially. An RGB frame is first converted to gray scale. A gray scaled image consists of only the intensity information of the image rather than the apparent colors. RGB vector is 3 dimensional (as it consists of values of colors red, green and blue) whereas gray scaled vector is one dimensional.
@@ -39,6 +57,7 @@ Local and Global. Local unusual activities occur within a relatively small area.
 
 
 References
+
 [1]	Human Activity Detection for Surveillance Video Compression - https://www.leadingindia.ai/downloads/projects/VP/vp_8.pdf
 [2]	Human Detection and Tracking in Video Surveillance System - https://www.vocal.com/video/human-detection-and-tracking-in-video-surveillance-system
 [3]	Dong-Gyu Lee, Heung-Il Suk, Sung-Kee Park and Seong-Whan Lee “Motion Influence Map for Unusual Human Activity Detection and Localization in Crowded Scenes” IEEE transactions on circuits and systems for video technology, vol. 25, no. 10, October 2015
