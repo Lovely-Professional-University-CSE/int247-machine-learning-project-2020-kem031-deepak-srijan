@@ -1,11 +1,15 @@
 Project By->
 
 
-Name: Deepak Yadav      Roll No: A33      Registration No: 11716024
+Name: Deepak Yadav      
+Roll No: A33      
+Registration No: 11716024
 
 &
 
-Name: Srijan Singh      Roll No: B63      Registration No: 11709122
+Name: Srijan Singh      
+Roll No: B63      
+Registration No: 11709122
 
 
 Human Activity Detection for Surveillance Video Compression
